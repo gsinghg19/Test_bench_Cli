@@ -1,0 +1,34 @@
+{
+  "name": "test_bench_cli",
+  "version": "1.0.0",
+  "description": "A cli for lots of tests and work to make work streamlined and easy to use with a GUI",
+  "main": "index.js",
+  "scripts": {
+    "test": "bats tests",
+    "start": "node index.js",
+    "test:jest": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@octokit/auth-basic": "^1.4.8",
+    "@octokit/rest": "^19.0.7",
+    "bats": "^1.8.2",
+    "chalk": "^5.2.0",
+    "clear": "^0.1.0",
+    "clui": "^0.3.6",
+    "configstore": "^6.0.0",
+    "figlet": "^1.5.2",
+    "inquirer": "^9.1.4",
+    "jest": "^29.4.1",
+    "lodash": "^4.17.21",
+    "minimist": "^1.2.7",
+    "simple-git": "^3.16.0",
+    "touch": "^3.1.0"
+  },
+  "devDependencies": {
+    "bats-assert": "github:ztombol/bats-assert",
+    "bats-support": "github:ztombol/bats-support"
+  }
+}
