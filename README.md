@@ -23,7 +23,7 @@ and then just enter your aws-vault password and mfa code as usual.
 
 6. node urlHttpCodeFormatter.js
 
-7. node randoDataGenerator
+7. node randoDataGenerator.js
 
 ## Javascript_snippets Folder:
 
