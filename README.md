@@ -55,6 +55,14 @@ In this version of the code, we've added a encodeData() function that implements
 
 The output variable is then generated as before, but using encodedLine instead of line. Finally, we write the output variable to the random_data.txt file as before.
 
+### 4. jsonDiffChecker
+
+This code first reads the contents of the two JSON files using the fs.readFileSync() function. It then defines a compareJSON() function that takes two JSON objects as input and returns an object containing the differences between the two objects. The compareJSON() function loops through each key in the first object and compares it to the corresponding key in the second object. If the keys are the same and the values are different, the key and both values are added to the result object. If the key exists only in the first object, the key and its value are added to the result object with the second value set to undefined. If the key exists only in the second object, the key and its value are added to the result object with the first value set to undefined.
+
+The code then calls the compareJSON() function with the contents of the two JSON files and saves the result to a new file named diff.json using the fs.writeFileSync() function. The JSON.stringify() function is used to convert the result object to a JSON string, and the null and 2 arguments are used to format the output for readability.
+
+Note that this code assumes that the two JSON files have the same structure and that the keys are unique within each file. If the files have different structures or duplicate keys, the code may produce unexpected results.
+
 ## TO DO:
 
 [√] create bash scripts for neo
