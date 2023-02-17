@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-const inputFile = 'input.txt';
+const inputFile = 'input.txt'; //add file path to analyize here.
 const outputFile = 'output.txt';
 
 const regex = /(https?:\/\/[^\s]+)\s+(\d+)/g;
