@@ -2,6 +2,8 @@
 
 A repository to create files for testing
 
+###### WARNING: This is a work in progress. This was developed on a wim on a friday afternoon. Testing WILL need to be done via jest and / or Bats. USE AT YOUR OWN RISK!!!!!
+
 ## Installation
 
 Run 'npm install' to install dependencies.
